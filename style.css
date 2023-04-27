@@ -1,0 +1,174 @@
+/* Write some CSS below : */
+
+/* 1. Global design first : Body, Headers, Colors, Fonts, Font size, Font weight */
+body {
+  font-size: 18px;
+  color: black;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: Abril Fatface;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Montserrat;
+}
+
+p {
+  text-align: justify;
+}
+
+#Aya-picture {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 1Opx 20 px 30px rgb(255, 255, 255);
+}
+
+a {
+  border-radius: 5px;
+  font-weight:600px;
+  font-family: Montserrat;
+  text-decoration: none;
+  padding: 15px 20 px;
+}
+
+
+.card-pink {
+  background-color: #F4CFDF;
+  text-align: center;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 20px 0;
+  box-shadow: 0 10 20;
+  border-radius: 10px;
+}
+
+.card-pink:hover {
+  background-color: #a8edea;
+}
+
+.container {
+  width: 700px;
+  margin: 10px auto;
+}
+
+#intro {
+  margin-bottom: 50px;
+}
+
+/* 2. Appearance of html elements : Images, Links (buttons), Divs */
+.btn-blue {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  ;
+  color: black;
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: grey;
+  letter-spacing: 30px;
+}
+
+.list-inline i:hover {
+  color: pink;
+}
+
+#reseaux-sociaux {
+  width: 30%;
+  border-radius: 80%;
+}
+
+#communication {
+  width: 30%;
+  border-radius: 80%;
+}
+
+#design {
+  width: 30%;
+  border-radius: 80%;
+}
+
+.competences li {
+  display: inline;
+  margin: 5px;
+}
+
+.centres-interets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  text-align: center;
+}
+
+.centres-interets img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.exp img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.all{
+  padding: 10px;
+}
+
+/* Breaking points */
+@media (max-width: 960px) {
+  .container {
+    width: 900px;
+  }
+
+  .cards-inline {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 680px;
+  }
+
+  .cards-inline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 480px;
+  }
+
+  .cards-inline {
+    grid-template-columns: 1fr;
+  }
+}
